@@ -26,23 +26,23 @@
   <main>
     <section class="entry">
       <h1 class="entry__title">Функциональное питание для котов</h1>
-      <h2 class="entry__title--small">Занялся собой? Займись котом!</h2>
+      <h2 class="entry__title entry__title--small">Занялся собой? Займись котом!</h2>
       <a class="entry__button button" href="form.html">Подобрать программу</a>
     </section>
     <section class="options">
       <div class="options__part">
-        <h3 class="options__title">Похудение</h3>
+        <h2 class="options__title">Похудение</h2>
         <p class="options__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="options__link" href="#">Каталог SLIM</a> // оставить заглушки?
       </div>
       <div class="options__part">
-        <h3 class="options__title">Набор массы</h3>
+        <h2 class="options__title">Набор массы</h2>
         <p class="options__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="options__link" href="#">Каталог PRO</a> // оставить заглушки?
       </div>
     </section>
     <section class="description">
-      <h3 class="description__title">Как это работает</h3>
+      <h2 class="description__title">Как это работает</h2>
       <ul class="description__list">
         <li class="description__item">Функциональное питание содержит только полезные питательные вещества.</li>
         <li class="description__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
@@ -59,12 +59,18 @@
         <dt class="example__item-center">60 дней</dt>
         <dd class="example__item-bottom">затрачено времени</dd>
       </dl>
-      <p class="example__text--bold">Затраты на питание: 15 000 руб.</p>
-      <div class="wrapper">
-        <img src="img/fat-cat.png">
-        <img src="img/thin-cat.png">
-        <p class="example__text--slider">Было</p>
-        <p class="example__text--slider">Стало</p>
+      <p class="example__text example__text--bold">Затраты на питание: 15 000 руб.</p>
+      <div class="slider">
+        <div class="slider__slide">
+          <img src="img/fat-cat.png">
+          <input class="visually-hidden" type="radio" name="toggle" id="radio-hidden1" cheched>
+        </div>
+        <div class="slider__slide">
+          <img src="img/thin-cat.png">
+          <input class="visually-hidden" type="radio" name="toggle" id="radio-hidden2">
+        </div>
+        <label class="slider__control" for="radio-hidden1">Было</label>
+        <label class="slider__control" for="radio-hidden2">Стало</label>
       </div>
     </section>
   </main>
@@ -74,13 +80,15 @@
     <p class="page-footer__text">Санкт-Петербург</p>
     <section class="page-footer-map map"></section>
     <a class="page-footer__logo-main logo-main"><img class="page-footer__logo-main-image logo-main-image" src="img/logo-main.svg"></a>
-    <ul class="page-footer__social-list">
-      <li class="page-footer__social-item">ВК</li>
-      <li class="page-footer__social-item">Инстаграм</li>
-      <li class="page-footer__social-item">Фейсбук</li>
-    </ul>
-    <p>HTML Academy</p> //это ссылка?
-    <a class="page-footer__academy-logo" href="https://htmlacademy.ru"><img class="page-footer__academy-logo-image"></a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item"><a href="#">ВК</a></li>
+        <li class="social__item"><a href="#">Инстаграм</a></li>
+        <li class="social__item"><a href="#">Фейсбук</a></li>
+      </ul>
+    </div>
+    <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="page-footer__academy-logo-image"></a>
   </footer>
 </body>
 

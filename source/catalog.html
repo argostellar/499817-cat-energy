@@ -25,23 +25,31 @@
   </header>
   <main>
     <section class="catalog">
-      <h1 class="catalog__title">Каталог продукции</h1>
+      <h1 class="page-title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item item">
-          <p class="catalog__text--big"></p>
-          <img class="catalog__image"> // как правильно разметить мини таблицу карточки товара?
-          <p class="catalog__text--right">Объём</p>
-          <p class="catalog__text--left">500 г.</p>
-          <p class="catalog__text--right">Вкус</p>
-          <p class="catalog__text--left">Курица</p>
-          <p class="catalog__text--right">Цена</p>
-          <p class="catalog__text--left">700 Р.</p>
-          <a class="catalog__button">Заказать</a>
+          <h2 class="catalog__text catalog__text--big">Cat Energy Pro 500 г</h2>
+          <img class="catalog__image">
+          <ul class="catalog__table table">
+            <li class="table__row">
+              <p class="table__text table__text--right">Объём</p>
+              <p class="table__text table__text--left">500 г.</p>
+            </li>
+            <li class="table__row">
+              <p class="table__text table__text--right">Вкус</p>
+              <p class="table__text table__text--left">Курица</p>
+            </li>
+            <li class="table__row">
+              <p class="table__text table__text--right">Цена</p>
+              <p class="table__text table__text--left">700 Р.</p>
+            </li>
+          </ul>
+          <a class="catalog__button button">Заказать</a>
         </li>
         <li class="catalog__item--all item">
-          < <p class="catalog__text--big">Показать ещё 100500 товаров</p>
-            <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-            <a class="catalog__button--all">Показать все</a>
+          <p class="catalog__text catalog__text--big">Показать ещё 100500 товаров</p>
+          <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
+          <a class="catalog__button catalog__button--grey button">Показать все</a>
         </li>
       </ul>
     </section>
@@ -64,13 +72,15 @@
     <p class="page-footer__text">Санкт-Петербург</p>
     <section class="page-footer-map map"></section>
     <a class="page-footer__logo-main logo-main"><img class="page-footer__logo-main-image logo-main-image" src="img/logo-main.svg"></a>
-    <ul class="page-footer__social-list">
-      <li class="page-footer__social-item">ВК</li>
-      <li class="page-footer__social-item">Инстаграм</li>
-      <li class="page-footer__social-item">Фейсбук</li>
-    </ul>
-    <p>HTML Academy</p> //это ссылка?
-    <a class="page-footer__academy-logo" href="https://htmlacademy.ru"><img class="page-footer__academy-logo-image"></a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item"><a href="#">ВК</a></li>
+        <li class="social__item"><a href="#">Инстаграм</a></li>
+        <li class="social__item"><a href="#">Фейсбук</a></li>
+      </ul>
+    </div>
+    <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="page-footer__academy-logo-image"></a>
   </footer>
 </body>
 
