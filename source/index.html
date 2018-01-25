@@ -51,7 +51,7 @@
       </ul>
     </section>
     <section class="example">
-      <h3 class="example__title">Живой пример</h3>
+      <h2 class="example__title">Живой пример</h2>
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <dl class="example__list">
         <dt class="example__item-center">5 кг</dt>
@@ -60,24 +60,30 @@
         <dd class="example__item-bottom">затрачено времени</dd>
       </dl>
       <p class="example__text example__text--bold">Затраты на питание: 15 000 руб.</p>
-      <div class="slider">
-        <div class="slider__slide">
-          <img src="img/fat-cat.png">
-          <input class="visually-hidden" type="radio" name="toggle" id="radio-hidden1" cheched>
+      <div class="example__slider slider">
+        <input class="slider__input" type="radio" id="before-btn" name="toggle" checked>
+        <input class="slider__input" type="radio" id="after-btn" name="toggle">
+        <div class="slider__slides">
+          <div class="slider__slide" id="slide1">
+            <img class="slider__image" src="img/fat-cat.png">
+          </div>
+          <div class="slider__slide" id="slide2">
+            <img class="slider__image" src="img/thin-cat.png">
+          </div>
+          <div class="slider__controls">
+            <label class="slider__control" for="before-btn">Было</label>
+            <label class="slider__control" for="after-btn">Стало</label>
+          </div>
         </div>
-        <div class="slider__slide">
-          <img src="img/thin-cat.png">
-          <input class="visually-hidden" type="radio" name="toggle" id="radio-hidden2">
-        </div>
-        <label class="slider__control" for="radio-hidden1">Было</label>
-        <label class="slider__control" for="radio-hidden2">Стало</label>
-      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <p class="page-footer__text">Приглашаем к сотрудничеству дилеров!</p>
-    <p class="page-footer__text">ул. Большая Конющенная, д. 19/8</p>
-    <p class="page-footer__text">Санкт-Петербург</p>
+    <section class="page-footer__info">
+      <p class="page-footer__text page-footer__text--big">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="page-footer__text">ул. Большая Конющенная, д. 19/8
+        <br> Санкт-Петербург
+      </p>
+    </section>
     <section class="page-footer-map map"></section>
     <a class="page-footer__logo-main logo-main"><img class="page-footer__logo-main-image logo-main-image" src="img/logo-main.svg"></a>
     <div class="page-footer__social social">
@@ -87,8 +93,10 @@
         <li class="social__item"><a href="#">Фейсбук</a></li>
       </ul>
     </div>
-    <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="page-footer__academy-logo-image"></a>
+    <section class="page-footer__academy academy">
+      <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="academy__logo-image"></a>
+    </section>
   </footer>
 </body>
 
