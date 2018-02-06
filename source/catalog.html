@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo">
     <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="33" height="38" alt="Cat Energy">
-  </a>
+    </a>
     <a class="page-header__logo-main logo-main"><img class="page-header__logo-main-image logo-main-image" src="img/logo-main.svg"></a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
@@ -28,7 +29,7 @@
       <h1 class="page-title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item item">
-          <h2 class="catalog__text catalog__text--big">Cat Energy Pro 500 г</h2>
+          <h2 class="catalog__text catalog__text--bold">Cat Energy Pro 500 г</h2>
           <img class="catalog__image">
           <ul class="catalog__table table">
             <li class="table__row">
@@ -57,19 +58,23 @@
       <h2 class="additonal__title">Дополнительные товары</h2>
       <ul class="additional__list">
         <li class="additional__item">
-          <p>Сахарозаменитель</p>
-          <a class="">Заказать</a> // здесь нужно использовать (переиспользовать) кнопку из обычной карточки?
+          <p class="additional__title additional__title--small">Сахарозаменитель</p>
+          <p class="additional__text">1 Упаковка</p><p class="additional__text">100 Р.</p>
+          <a class="additional__button button">Заказать</a>
         </li>
       </ul>
     </section>
-    <div class="bonus"> // этот блок - сслыка?
+    <div class="bonus">
       <p class="bonus__text">Закажите всё и получите чехол для кота в подарок!</p>
     </div>
   </main>
   <footer class="page-footer">
-    <p class="page-footer__text">Приглашаем к сотрудничеству дилеров!</p>
-    <p class="page-footer__text">ул. Большая Конющенная, д. 19/8</p>
-    <p class="page-footer__text">Санкт-Петербург</p>
+    <section class="page-footer__info">
+      <p class="page-footer__text page-footer__text--big">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="page-footer__text">ул. Большая Конющенная, д. 19/8
+        <br> Санкт-Петербург
+      </p>
+    </section>
     <section class="page-footer-map map"></section>
     <a class="page-footer__logo-main logo-main"><img class="page-footer__logo-main-image logo-main-image" src="img/logo-main.svg"></a>
     <div class="page-footer__social social">
@@ -79,8 +84,10 @@
         <li class="social__item"><a href="#">Фейсбук</a></li>
       </ul>
     </div>
-    <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="page-footer__academy-logo-image"></a>
+    <section class="page-footer__academy academy">
+      <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="academy__logo-image"></a>
+    </section>
   </footer>
 </body>
 
