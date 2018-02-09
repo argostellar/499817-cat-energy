@@ -1,14 +1,24 @@
 .table {
-  list-style: none;
+  .reset-list();
+
+  display: table;
 }
 
-//.table__row {}
+.table__row {
+  display: table-row;
+}
 
 .table__text {
   font-size: 12px;
   line-height: 16px;
+
+  display: table-cell;
 }
 
-//.table__text--left {}
+.table__text--left {
+  padding-left: 10px;
+}
 
-//.table__text--right {}
+.table__text--right {
+  padding-right: 10px;
+}

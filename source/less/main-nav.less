@@ -1,5 +1,10 @@
 .main-nav__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .reset-list();
 }
 
 .main-nav__item {
@@ -8,4 +13,9 @@
   font-weight: medium;
   font-size: 20px;
   text-transform: uppercase;
+
+  padding: 25px 0;
+
+  text-align: center;
+  border-bottom: 1px solid @grey;
 }
