@@ -1,5 +1,8 @@
 .additional {
   .container();
+
+  display: flex;
+  flex-direction: column;
 }
 
 .additional__title {
@@ -15,11 +18,21 @@
 
 .additional__list {
   .reset-list();
+
+  display: flex;
+  flex-direction: column;
 }
 
-/*.additional__item {}*/
+.additional__item {
+  display: flex;
+  flex-direction: column;
 
-/*.additional__button {}*/
+
+}
+
+.additional__button {
+  .center();
+}
 
 .additional__text {
   font-size: 14px;

@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  .center();
 }
 
 .options__part {
@@ -39,4 +41,24 @@
   padding-left: 20px;
 
   text-decoration: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .options {
+    .container(@tablet);
+  }
+
+  .options-part {
+    height: 372px;
+    width: 708px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .options {
+    .container(@desktop);
+    flex-direction: row;
+  }
 }

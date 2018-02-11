@@ -3,6 +3,8 @@
 
   display: flex;
   flex-direction: column;
+
+  .container();
 }
 
 .description__title {
@@ -11,10 +13,42 @@
 }
 
 .description__list {
-  list-style: none;
+  .reset-list();
 }
 
 .description__item {
   font-size: 14px;
   line-height: 18px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .description {
+    .tablet-container();
+  }
+
+  .description__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 708px;
+  }
+
+  .description__item {
+    width: 324px;
+    height: 284px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .description {
+    .container(@desktop);
+  }
+  .description__list {
+    flex-wrap: no-wrap;
+
+    width: auto;
+  }
 }

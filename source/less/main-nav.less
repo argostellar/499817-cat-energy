@@ -1,5 +1,6 @@
+//.main-nav {}
+
 .main-nav__list {
-  list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,4 +19,37 @@
 
   text-align: center;
   border-bottom: 1px solid @grey;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 440px;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    background-color: @white;
+    color: @white;
+    border: none;
+  }
+
+  .main-nav__item {
+    border: none;
+  }
+
+
+}
+
+
+@media (min-width: @desktop-width) {
+
 }

@@ -1,4 +1,9 @@
-/*.forms {}*/
+.forms {
+  display: flex;
+  flex-direction: column;
+
+  .container();
+}
 
 .forms__title {
   font-size: 24px;
@@ -10,7 +15,16 @@
   line-height: 18px;
 }
 
-/*.forms__info {}*/
+.forms__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.forms__programs {
+  display: flex;
+  flex-direction: column;
+}
 
 .forms__text {
   font-size: 16px;
@@ -36,7 +50,12 @@
 .forms__programs {}
 */
 
-/*.forms__commentary {}*/
+.forms__commentary {
+  display: flex;
+  flex-direction: column;
+
+  .container();
+}
 
 .forms__commentary-text {
   font-size: 16px;
@@ -44,10 +63,36 @@
   text-transform: uppercase;
 }
 
-/*.forms__additional {} */
+.forms__additional {
+  display: flex;
+  flex-direction: column;
+
+  .container();
+}
 
 /*.forms__checkbox {} */
 
 .forms__button {
-  border: none;
+  display: flex;
+  flex-direction: column;
+
+  .container();
+}
+
+@media (min-width: @tablet-width) {
+  .forms__additional {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .forms__adiditional {
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+
+    .container(@desktop);
+  }
 }
